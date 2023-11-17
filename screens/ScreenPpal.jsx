@@ -1,3 +1,4 @@
+import ChangeLastLetter from '@/components/ChangeLastLetter'
 import DeleteLastLetter from '@/components/DeleteLastLetter'
 import ModalANT from '@/components/ModalANT'
 import React, { useState, useEffect } from 'react'
@@ -34,6 +35,10 @@ const ScreenPpal = () => {
         <br/>
         <br/>
         <DeleteLastLetter></DeleteLastLetter>
+        <br/>
+        <br/>
+        <br/>
+        <ChangeLastLetter></ChangeLastLetter>
 
     </div>
   )
