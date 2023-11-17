@@ -1,8 +1,14 @@
 import React from 'react'
 
 const DeleteLastLetter = () => {
+
+
+
   return (
-    <div>DeleteLastLetter</div>
+    <>
+    <input onChange={(e)=>{e.target.value}}></input>
+    <button onClick={()=>{}}>Borra última letra</button>
+    </>
   )
 }
 
