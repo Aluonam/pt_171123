@@ -6,9 +6,9 @@ const DeleteLastLetter = () => {
 
 
     const deleteLetter = ()=>{
-        const copySentence = inputUser.split("")
-        const delLetter = copySentence.slice(0,-1)
-        setInputUser(delLetter.join(""))
+        const letters = inputUser.split("")
+        const deletLast = letters.slice(0,-1)
+        setInputUser(deletLast.join(""))
     }
 
 
