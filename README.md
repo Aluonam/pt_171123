@@ -5,7 +5,7 @@ Tarea principal
 **Consume una API y muestra los datos en un modal.**
 
 
-API URL: https://pokeapi.co/
+API URL: https://randomuser.me/api/
 
 
 Tareas secundarias
