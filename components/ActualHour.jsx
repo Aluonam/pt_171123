@@ -1,14 +1,23 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react'
 
 const ActualHour = () => {
 
-    const fullDate = new Date();
+    const [hour, setHour] = useState()
 
-    const hour = fullDate.toLocaleString().split(" ")[1]
+    useEffect(() => {
+      const actionPerSecond = setInterval(
+        ()=>{
+            setHour(new Date().toLocaleString().split(",")[1])
+        }, 1000)
+        return ()=> clearInterval(actionPerSecond)
+    }, [])
+    
+
 
   return (
     <div>
-        Actualmente son las: {hour}
+
+        Actualmente son las:{hour}
 
     </div>
   )

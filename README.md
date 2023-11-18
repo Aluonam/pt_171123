@@ -14,4 +14,16 @@ Crea un input que permita escribir al usuario y al pulsar un botón elimina lo �
 
 Crea un input que permita escribir al usuario y al pulsar un botón pone la última letra de todas las palabras en mayúsculas mostrando el resultado en la pantalla.
 
-Añade la hora actual y que se actualice cada segundo
+Añade la hora actual y que se actualice cada segundo:
+```javascript
+const [hour, setHour] = useState()
+
+    useEffect(() => {
+      const actionPerSecond = setInterval(
+        ()=>{
+            setHour(new Date().toLocaleString().split(",")[1])
+        }, 1000)
+        return ()=> clearInterval(actionPerSecond)
+    }, [])
+    
+    ```
