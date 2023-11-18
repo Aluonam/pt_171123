@@ -1,3 +1,4 @@
+import ActualHour from '@/components/ActualHour'
 import ChangeLastLetter from '@/components/ChangeLastLetter'
 import DeleteLastLetter from '@/components/DeleteLastLetter'
 import ModalANT from '@/components/ModalANT'
@@ -39,6 +40,10 @@ const ScreenPpal = () => {
         <br/>
         <br/>
         <ChangeLastLetter></ChangeLastLetter>
+        <br/>
+        <br/>
+        <br/>
+        <ActualHour></ActualHour>
 
     </div>
   )
